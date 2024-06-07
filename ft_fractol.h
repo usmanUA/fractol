@@ -6,7 +6,7 @@
 /*   By: uahmed <uahmed@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 19:50:34 by uahmed            #+#    #+#             */
-/*   Updated: 2023/12/04 15:08:32 by uahmed           ###   ########.fr       */
+/*   Updated: 2023/12/07 15:50:03 by uahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <math.h>
 # include <mlx.h>
 # include <stdlib.h>
-# include <unistd.h>
 
 //********** Struct Definitions **********//
 typedef struct s_complex

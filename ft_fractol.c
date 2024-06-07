@@ -6,7 +6,7 @@
 /*   By: uahmed <uahmed@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 19:52:54 by uahmed            #+#    #+#             */
-/*   Updated: 2023/12/04 16:03:43 by uahmed           ###   ########.fr       */
+/*   Updated: 2023/12/07 16:01:06 by uahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_fractol(char *win_name, double real, double img, int fract)
 	fractal->fractal = fract;
 	fractal->move_real = 0.0;
 	fractal->move_img = 0.0;
-	fractal->iter = 42;
+	fractal->iter = 50;
 	fractal->julia.real = real;
 	fractal->julia.img = img;
 	fractal->zoom = 1.0;

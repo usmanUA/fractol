@@ -27,10 +27,16 @@ $(NAME): $(OBJS) $(LIBFT)
 $(LIBFT):
 	@$(MAKE) -C libft
 
+.bonus: $(NAME) $(OBJS) $(LIBFT)
+	@[ -f $(NAME) ] || (echo "$(GREEN)Creating The Executable:   $(NAME)$(RESET)" && cc -g $(OBJS) libft/$(LIBFT) -lmlx -framework OpenGL -framework AppKit -o $(NAME))
+	@touch .bonus
+
+bonus: .bonus
+
 clean:
 	@echo "$(RED)Cleaning Object Files for libft, ft_printf and fractol$(RESET)"
 	@$(MAKE) -C libft clean
-	@rm -rf $(OBJS)
+	@rm -rf $(OBJS) .bonus
 
 fclean: clean
 	@echo "$(RED)Removing   $(LIBFT) and $(NAME)$(RESET)"

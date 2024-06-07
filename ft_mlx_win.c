@@ -6,7 +6,7 @@
 /*   By: uahmed <uahmed@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 19:25:27 by uahmed            #+#    #+#             */
-/*   Updated: 2023/12/04 16:08:45 by uahmed           ###   ########.fr       */
+/*   Updated: 2023/12/07 15:51:36 by uahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	ft_exit(int errno, t_fractol *fractal)
 		mlx_destroy_window(fractal->mlx, fractal->mlx_win);
 	if (fractal->mlx)
 		free(fractal->mlx);
+	if (fractal)
+		free(fractal);
 	exit(errno);
 }
 

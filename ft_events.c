@@ -6,7 +6,7 @@
 /*   By: uahmed <uahmed@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 16:16:10 by uahmed            #+#    #+#             */
-/*   Updated: 2023/12/04 14:05:15 by uahmed           ###   ########.fr       */
+/*   Updated: 2023/12/07 16:01:34 by uahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ int	ft_closemlx(t_fractol *fractal)
 {
 	mlx_destroy_image(fractal->mlx, fractal->image.image);
 	mlx_destroy_window(fractal->mlx, fractal->mlx_win);
-	free(fractal->mlx);
+	if (fractal)
+		free(fractal);
 	exit(EXIT_SUCCESS);
 }
 
